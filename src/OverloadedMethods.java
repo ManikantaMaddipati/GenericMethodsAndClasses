@@ -5,7 +5,9 @@ public class OverloadedMethods
         Integer integer[] = {1,2,3,4,5,6};
         Character chars[]={'a','b','c'};
         Double dou[] = {1.1,2.2,3.3,4.4};
-
+/**
+ * Overloaded methods are user to perform same operation in different types of data.
+ */
         System.out.println("Array of integers");
         printarray(integer);
         System.out.println("Array of chars");
