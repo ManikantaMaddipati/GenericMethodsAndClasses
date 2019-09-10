@@ -7,7 +7,7 @@ public class OverloadedMethods
         Double dou[] = {1.1,2.2,3.3,4.4};
 /**
  * Overloaded methods are user to perform same operation in different types of data. Looking the method method prameters
- * and for-loop. They can be replaced eith Single-generic-type.
+ * and for-loop. They can be replaced with Single-generic-type.
  */
         System.out.println("Array of integers");
         printarray(integer);
