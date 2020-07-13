@@ -62,4 +62,6 @@ public class OverloadedMethods
      */
 
 
+    public static class GenericClasses {
+    }
 }
