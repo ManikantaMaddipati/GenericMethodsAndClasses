@@ -20,6 +20,10 @@ public class Stack<E> {
         elements.add(pushValue);
     }
 
+    //As with generic methods, when a generic class is compiled, the compiler performs erasure on the class’s type parameters
+    // and replaces them with their upper bounds. For class Stack no upper bound is specified, so the default upper bound, Object, is used.
+    // The scope of a generic class’s type parameter is the entire class.
+    // However, type parameters cannot be used in a class’s static variable declarations.
     public E pop() {
         if (elements.isEmpty()) {
             throw new NoSuchElementException("Stack is empty, cannot pop");
