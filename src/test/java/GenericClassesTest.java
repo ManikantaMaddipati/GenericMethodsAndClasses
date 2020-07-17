@@ -13,5 +13,13 @@ public class GenericClassesTest {
      assertEquals("Must return Double Value",test,doubleStack.pop());
     }
 
+    @Test
+    public void testingWildCards(){
+        WildCards<Double> wildCards = new WildCards();
+        Double test=10.5;
+        assertEquals("Sum must be ",test,wildCards.action());
+
+    }
+
 
 }
