@@ -24,6 +24,13 @@ public class WildCards<T> {
    //How do we create a more flexible version of method sum that can total the elements of any List containing elements of any subclass of Number?
     // This is where wildcard type arguments are important
 
+    //Wildcards enable you to specify method parameters, return values, variables or fields, and so on,
+    // that act as supertypes or subtypes of parameterized types
+    //eg:List<? extends Number>
+    //question mark (?), which represents an “unknown type.”
+    //In this case, the wildcard extends class Number, which means that the wildcard has an upper bound of Number.
+    //Thus, the unknown-type argument must be either Number or a subclass of Number
+
     public Double action(){
         for (Integer element : numbers) {
             numberList.add(element);
@@ -31,9 +38,12 @@ public class WildCards<T> {
        return sum(numberList);
     }
 
-    public static double sum(List<Number> list) {
+    // method sum can receive an argument a List containing any type of Number, such as a List<Integer>  List<Double>  or List<Number>
+    public static double sum(List<? extends Number> list) {
         double total = 0;
         for (Number element : list) {
+            //because the wildcard was specified with the upper bound Number. For this reason line 46 is allowed by compiler,
+            // because all Number objects have a doubleValue method.
             total += element.doubleValue();
         }
         return total;
