@@ -16,7 +16,7 @@ public class GenericClassesTest {
     @Test
     public void testingWildCards(){
         WildCards<Double> wildCards = new WildCards();
-        Double test=10.5;
+        Integer test=10;
         assertEquals("Sum must be ",test,wildCards.action());
 
     }
