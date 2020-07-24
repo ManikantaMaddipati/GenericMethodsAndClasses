@@ -10,6 +10,9 @@ public class UseAList {
         //Observation1 : This List can take anything;
         names.add(LocalDate.now());
 
+        //Observation 2 : Explicit casting is needed.
+        String s = (String) names.get(0);
+
         for (Object o: names) {
             System.out.println(o);
         }
