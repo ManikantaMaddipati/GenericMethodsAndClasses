@@ -14,7 +14,7 @@ public class UseAList {
 
         //Observation 2 : Explicit casting is needed.
         //Observation 4 : and no explicit casting is needed.
-        String s = names.get(0);
+        String s = names.get(0); // Observation 5 : implicit casting is present
 
         for (Object o: names) {
             System.out.println(o);
