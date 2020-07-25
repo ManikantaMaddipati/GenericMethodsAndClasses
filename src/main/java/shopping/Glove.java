@@ -1,6 +1,6 @@
 package shopping;
 
-public class Glove implements Sized {
+public class Glove implements Sized ,Colored{
     private int size;
     private String color;
 
