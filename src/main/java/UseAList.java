@@ -31,5 +31,8 @@ public class UseAList {
         names.add(LocalDate.now());
     }
 
+    //Do generic Classes on our Own.
+
+
 
 }
