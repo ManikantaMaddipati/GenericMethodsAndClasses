@@ -1,7 +1,13 @@
 package shopping;
 
-//We need to tell compiler "not anything" it is the one with getSize() method
-public class Pair<E> {
+//We need to tell compiler "not anything" it is the one with getSize() method,
+//In Inheritance: We have "implements"  - Interface  Note : Interface extents Interface
+//                           "extends"  Class
+// -------------------------------------------------------------------------------------
+//In Generics : "extends" means is assignment compatible with. (In generics world no implements)
+
+//Constraint on E not statment about E
+public class Pair<E extends Sized> {
     //
     private E left;
     //

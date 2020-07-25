@@ -12,6 +12,8 @@ public class UserPair {
         //Pair<String> pair = new Pair("String", LocalDate.now());
 
         //Observation 9:
+
+        //Now Below statement is getting Complication because string is not having getSize();
         Pair<String> pair = new Pair<String>("String", "String");
 
     }

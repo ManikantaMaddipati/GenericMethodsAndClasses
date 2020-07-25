@@ -1,6 +1,6 @@
 package shopping;
 
-public class Glove {
+public class Glove implements Sized {
     private int size;
     private String color;
 
@@ -11,7 +11,6 @@ public class Glove {
                 ", color='" + color + '\'' +
                 '}';
     }
-
     public int getSize() {
         return size;
     }
