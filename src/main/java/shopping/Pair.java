@@ -6,12 +6,11 @@ package shopping;
 // -------------------------------------------------------------------------------------
 //In Generics : "extends" means is assignment compatible with. (In generics world no implements)
 
-//Constraint on E not statment about E
-public class Pair<E extends Sized> {
+public class Pair<E> {
     //
-    private E left;
+    public E left;
     //
-    private E right;
+    public E right;
 
     public Pair(E left, E right) {
         this.left = left;
@@ -30,10 +29,6 @@ public class Pair<E extends Sized> {
                 '}';
     }
 
-    public Boolean isMatched(){
-        //Observation : Why getSize() is compilation error;
-        return left.getSize() == right.getSize();
-    }
 
     public void setLeft(E left) {
         this.left = left;
