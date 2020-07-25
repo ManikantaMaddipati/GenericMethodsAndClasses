@@ -1,5 +1,6 @@
 package shopping;
 
+//We need to tell compiler "not anything" it is the one with getSize() method
 public class Pair<E> {
     //
     private E left;
