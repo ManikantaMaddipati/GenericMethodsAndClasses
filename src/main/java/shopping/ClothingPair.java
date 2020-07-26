@@ -17,9 +17,11 @@ public class ClothingPair<E extends Sized & Colored> extends Pair<E> {
     //Observation 9: method parameters throws exception ON E..Why?
     //1. Static generic types in class cannot be used in static methods.
     //2. We can have other generic types in parameter section.
-    public static boolean matches(E left, E right){
+    public static <E extends Sized & Colored>boolean matches(E left, E right){
         return left.getSize() == right.getSize()
                 && left.getColor().equals(left.getColor());
     }
+
+
 
 }
